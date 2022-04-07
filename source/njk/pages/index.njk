@@ -8,7 +8,7 @@ n{% extends "_layout.njk" %}
       Pink.
     </h1>
 
-    <img class="promo__img-phone" alt="Рука с телефоном.">
+    <img class="promo__img-phone" src="img/hand-phone-bg.jpg" alt="Рука с телефоном.">
 
     <a class="promo__button-download" href="https://www.apple.com/ru/app-store/">
       Скачать приложение
@@ -74,7 +74,7 @@ n{% extends "_layout.njk" %}
       </dd>
 
       <dt class="features__item">
-         Заводит новых друзей              {#к этому пункту добавится декорация с телефоном #}
+        Заводит новых друзей              {#к этому пункту добавится декорация с телефоном #}
       </dt>
       <dd class="features__description">
         Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -91,25 +91,31 @@ n{% extends "_layout.njk" %}
       «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
     </p>
 
-    <div class="togglers reviews__togglers">
-      <a class="togglers__button togglers__button--current" href="#!">
-        <span class="visually-hidden">
-          Переключение отзыва.
-        </span>
-      </a>
+    <ul class="togglers togglers__reviews-list">
+      <li class="togglers__item">
+        <a class="togglers__button togglers__button--current" href="#!">
+          <span class="visually-hidden">
+            Вариант подписки.
+          </span>
+        </a>
+      </li>
 
-      <a class="togglers__button" href="#!">
-        <span class="visually-hidden">
-          Переключение отзыва.
-        </span>
-      </a>
+      <li class="togglers__item">
+        <a class="togglers__button" href="#!">
+          <span class="visually-hidden">
+            Вариант подписки.
+          </span>
+        </a>
+      </li>
 
-      <a class="togglers__button" href="#!">
-        <span class="visually-hidden">
-          Переключение отзыва.
-        </span>
-      </a>
-    </div>
+      <li class="togglers__item">
+        <a class="togglers__button" href="#!">
+          <span class="visually-hidden">
+            Вариант подписки.
+          </span>
+        </a>
+      </li>
+    </ul>
   </section>
 
   <section class="tariffs page-main__tariffs">
@@ -118,40 +124,126 @@ n{% extends "_layout.njk" %}
     </h2>
 
     <table class="tariffs__table">
-      <tr class="tariffs__names">
-        <th class="hit tariffs__name">
-          Стандарт
+      <thead class="">
+        <tr class="tariffs__names">
+          <th class="visually-hidden">
+            Свойства.
+          </th>
 
-          <span class="hit__content">
-            Хит
-          </span>
+          <th class="tariffs__name">
+            База
+              <p class="tariffs__price">
+                1,99 USD
+              </p>
+          </th>
 
-          <p class="tariffs__price">
-            3,99 USD
-          </p>
-        </th>
-      </tr>
+          <th class="hit tariffs__name">
+            Стандарт
+              <span class="hit__content">
+                Хит
+              </span>
+              <p class="tariffs__price">
+                3,99 USD
+              </p>
+          </th>
+
+          <th class="tariffs__name">
+            Анлим
+              <p class="tariffs__price">
+                9,99 USD
+              </p>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="tariffs-functions">
+          <th class="tariffs-function">
+            Розовый фильтр
+          </th>
+          <td class="tariffs-function">
+            <p class="tariffs-value tariffs-value--yes">
+            </p>
+          </td>
+
+          <td class="tariffs-function">
+            <p class="tariffs-value tariffs-value--yes">
+            </p>
+          </td>
+
+          <td class="tariffs-function">
+            <p class="tariffs-value tariffs-value--yes">
+            </p>
+          </td>
+        </tr>
+
+        <tr class="tariffs-functions">
+          <th class="tariffs-function">
+            Смайлики
+          </th>
+          <td class="tariffs-function">
+            <p class="tariffs-value tariffs-value--no">
+            </p>
+          </td>
+
+          <td class="tariffs-function">
+            <p class="tariffs-value tariffs-value--yes">
+            </p>
+          </td>
+
+          <td class="tariffs-function">
+            <p class="tariffs-value tariffs-value--yes">
+            </p>
+          </td>
+        </tr>
+
+        <tr class="tariffs-functions">
+          <th class="tariffs-function">
+            Комментарии
+          </th>
+          <td class="tariffs-function">
+            <p class="tariffs-value tariffs-value--no">
+            </p>
+          </td>
+
+          <td class="tariffs-function">
+            <p class="tariffs-value tariffs-value--no">
+            </p>
+          </td>
+
+          <td class="tariffs-function">
+            <p class="tariffs-value tariffs-value--yes">
+            </p>
+          </td>
+        </tr>
+      </tbody>
     </table>
 
-    <div class="togglers tariffs__togglers">
-      <a class="togglers__button" href="#!">
-        <span class="visually-hidden">
-          Вариант подписки.
-        </span>
-      </a>
+    <ul class="togglers tariffs__togglers-list">
+      <li class="togglers__item">
+        <a class="togglers__button" href="#!">
+          <span class="visually-hidden">
+            Вариант подписки.
+          </span>
+        </a>
+      </li>
 
-      <a class="togglers__button togglers__button--current" href="#!">
-        <span class="visually-hidden">
-          Вариант подписки.
-        </span>
-      </a>
+      <li class="togglers__item">
+        <a class="togglers__button togglers__button--current" href="#!">
+          <span class="visually-hidden">
+            Вариант подписки.
+          </span>
+        </a>
+      </li>
 
-      <a class="togglers__button" href="#!">
-        <span class="visually-hidden">
-          Вариант подписки.
-        </span>
-      </a>
-    </div>
+      <li class="togglers__item">
+        <a class="togglers__button" href="#!">
+          <span class="visually-hidden">
+            Вариант подписки.
+          </span>
+        </a>
+      </li>
+    </ul>
   </section>
 
   <footer class="contacts page-main__footer">
@@ -160,7 +252,7 @@ n{% extends "_layout.njk" %}
       Свяжитесь с нами!
     </p>
 
-    <dl class="contacts__list contacts-list">
+    <dl class="contacts-list contacts__list">
       <dt class="contacts-list__item">
         Звоните:
       </dt>
