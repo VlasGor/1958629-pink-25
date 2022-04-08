@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк > {{ title }}</title>
+    <title>HTML Academy: Пинк &gt; {{ title }}</title>
   </head>
 
   <body class="page">
@@ -46,7 +46,6 @@
       </nav>
     </header>
 
-
     <main class="page-main page__main">
       {% block main %}{% endblock %}
     </main>
@@ -82,11 +81,11 @@
         </li>
       </ul>
 
-      <p class="page-footer__desc">
+      <p class="page-footer__dev">
         Разработано
 
-        <a class="page-footer__link" href="https://htmlacademy.ru/">
-          <img class="page-footer__logo" src="img/logo-html-academy.svg" alt="Сайт академии HTML Academy.">
+        <a class="page-footer__dev-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-footer__dev-logo" src="img/logo-htmlacademy.svg" alt="Сайт академии HTML Academy.">
         </a>
       </p>
     </footer>
